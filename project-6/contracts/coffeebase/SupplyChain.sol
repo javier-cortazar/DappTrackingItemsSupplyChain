@@ -244,7 +244,6 @@ contract SupplyChain {
     items[_upc].itemState = State.Sold;
 
     // Transfer money to farmer
-    
     address payable addressPayConsumerID = address(uint160(items[_upc].originFarmerID));
     addressPayConsumerID.transfer(items[_upc].productPrice);
 
@@ -357,7 +356,7 @@ contract SupplyChain {
   productID = items[_upc].productID;
   productNotes = items[_upc].productNotes;
   productPrice = items[_upc].productPrice;
-  itemState = 0;
+  itemState = checkItemState(items[_upc].itemState);
   distributorID = items[_upc].distributorID;
   retailerID = items[_upc].retailerID;
   consumerID = items[_upc].consumerID;
@@ -374,5 +373,25 @@ contract SupplyChain {
   retailerID,
   consumerID
   );
+  }
+
+  function checkItemState(State state) public pure returns (uint uintState) {
+    if (state == State.Harvested) {
+      return 0;
+    } else if (state == State.Processed) {
+      return 1;
+    } else if (state == State.Packed) {
+      return 2;
+    } else if (state == State.ForSale) {
+      return 3;
+    } else if (state == State.Sold) {
+      return 4;
+    } else if (state == State.Shipped) {
+      return 5;
+    } else if (state == State.Received) {
+      return 6;
+    } else if (state == State.Purchased) {
+      return 7;
+    } 
   }
 }
