@@ -1,3 +1,6 @@
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const mnemonic = "memory laugh drift talent what surge place detail correct donate release physical"
+
 module.exports = {
   networks: {
     development: {
