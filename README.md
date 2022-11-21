@@ -13,10 +13,18 @@
 
 ![State Diagram](images/state-diagram.png)
 
-## Requirement 1 - Libraries
+## Requirement 2 - Libraries
 
-## Requirement 1 - IPFS
+* Truffle v5.1.0 (core: 5.1.0) - to compile, deploy and testing Smart Contracts
+* Solidity v0.5.12 (solc-js)
+* Node v11.12.0
+* Web3.js v1.2.2 - library that can be used to connect to Ethereum nodes from the same or a remote computer
+* Truffle Hdwallet-provider - provider that will connect our web3 to the Ethereum world
+* Infura - to deploy the contract on the Sepolia public test network
 
+
+## Requirement 3 - IPFS
+N/A
 
 # Part 4: Deploy smart contracts on public test network
 
