@@ -18,7 +18,7 @@
 * Truffle v5.1.0 (core: 5.1.0) - to compile, deploy and testing Smart Contracts
 * Solidity v0.5.12 (solc-js)
 * Node v11.12.0
-* Web3.js v1.2.2 - library that can be used to connect to Ethereum nodes from the same or a remote computer
+* Web3.js v1.2.2 - client-side library that can be used alongside a web page and query and can submit transactions to Ethereum nodes
 * Truffle Hdwallet-provider - provider that will connect our web3 to the Ethereum world
 * Infura - to deploy the contract on the Sepolia public test network
 
