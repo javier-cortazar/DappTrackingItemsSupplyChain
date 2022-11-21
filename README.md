@@ -1,6 +1,18 @@
 # Part 1: Plan the project with write-ups
 ## Requirement 1 - UML
 
+### Activity Diagram
+
+![Activity Diagram](images/activity-diagram.png)
+
+### Sequence Diagram
+
+![Sequence Diagram](images/sequence-diagram.png)
+
+### State Diagram
+
+![State Diagram](images/state-diagram.png)
+
 ## Requirement 1 - Libraries
 
 ## Requirement 1 - IPFS
@@ -41,25 +53,6 @@ SupplyChain - 0xA100c14C2B8c6066c6924FAC9545d4EF5B2217c4
 
 
 
-
-# Supply chain & data auditing
-
-This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
-
-The DApp User Interface when running should look like...
-
-![truffle test](images/ftc_product_overview.png)
-
-![truffle test](images/ftc_farm_details.png)
-
-![truffle test](images/ftc_product_details.png)
-
-![truffle test](images/ftc_transaction_history.png)
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
