@@ -84,7 +84,7 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        Web3 = new Web3(App.web3Provider);
+        web3 = new Web3(App.web3Provider);
 
         // Retrieving accounts
         web3.eth.getAccounts(function(err, res) {
@@ -165,7 +165,6 @@ App = {
     },
 
     harvestItem: function(event) {
-        console.log("Entra en harvest");
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
 
