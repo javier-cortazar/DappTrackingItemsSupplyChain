@@ -1,3 +1,4 @@
+
 App = {
     web3Provider: null,
     contracts: {},
@@ -74,7 +75,7 @@ App = {
         }
         // If no injected web3 instance is detected, fall back to Ganache
         else {
-            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:9545');
         }
 
         App.getMetaskAccountID();
@@ -83,7 +84,7 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        web3 = new Web3(App.web3Provider);
+        let web3 = new Web3(App.web3Provider);
 
         // Retrieving accounts
         web3.eth.getAccounts(function(err, res) {
@@ -164,6 +165,7 @@ App = {
     },
 
     harvestItem: function(event) {
+        console.log("Entra en harvest");
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
 
