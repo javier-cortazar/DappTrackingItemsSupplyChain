@@ -26,7 +26,7 @@
 ## Requirement 3 - IPFS
 N/A
 
-# Part 4: Deploy smart contracts on public test network
+# Part 4: Deploy smart contracts on Sepolia public test network
 
 ### Contract Hash
 FarmerRole - 0x481c3881cdafa6947eb6329453002168a6a69a260ecfd5b752e2da700fceeb77
