@@ -84,7 +84,7 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        let web3 = new Web3(App.web3Provider);
+        Web3 = new Web3(App.web3Provider);
 
         // Retrieving accounts
         web3.eth.getAccounts(function(err, res) {
