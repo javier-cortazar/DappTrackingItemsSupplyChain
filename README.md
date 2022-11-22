@@ -13,6 +13,10 @@
 
 ![State Diagram](images/state-diagram.png)
 
+### Class Diagram
+
+![State Diagram](images/class-diagram.png)
+
 ## Requirement 2 - Libraries
 
 * Truffle v5.1.0 (core: 5.1.0) - to compile, deploy and testing Smart Contracts
